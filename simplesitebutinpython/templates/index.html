@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botón Dinámico</title>
+  </head>
+  <body>
+    <h1>Ingresa un texto</h1>
+    <input
+      type="text"
+      id="entrada"
+      placeholder="Escribe algo y presiona Enter"
+    />
+    <div id="contenedor-botones"></div>
+    <!-- Contenedor para el botón generado -->
+
+    <!-- Modal -->
+    <div id="modal" style="display: none">
+      <div class="modal-contenido">
+        <p>¡Presionaste Enter!</p>
+        <button id="cerrarModal">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
